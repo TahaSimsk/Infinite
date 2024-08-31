@@ -31,20 +31,5 @@ public class TargetScanner : MonoBehaviour
         }
     }
 
-    public GameObject GetTarget()
-    {
-
-        if (enemiesInRange.Count != 0)
-        {
-            if (enemiesInRange[0] == null)
-            {
-                enemiesInRange.RemoveAt(0);
-            }
-            if (enemiesInRange.Count != 0)
-            {
-                return enemiesInRange[0];
-            }
-        }
-        return null;
-    }
+ 
 }
